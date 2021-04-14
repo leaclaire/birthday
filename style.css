@@ -2,7 +2,7 @@ body {
     background: url(./image/Akan.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: palegreen;
+    color: blue;
 
   }
   body::after{
@@ -13,5 +13,4 @@ body {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: rgba(34, 24, 24, 0.5);
   }
