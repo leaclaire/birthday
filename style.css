@@ -2,6 +2,8 @@ body {
     background: url(./image/blended-families.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: blue;
+
   }
   body::after{
     position: absolute;
