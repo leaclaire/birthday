@@ -44,5 +44,5 @@ function akanFunction() {
     } else {
       alert("input the correct year e.g 2019");
     }
-
+  }
  
