@@ -45,4 +45,15 @@ function akanFunction() {
     } else {
       alert("input the correct year e.g 2019");
     }
+ }
+ const maleName = ["Kwasi", "Kwado", "Kwabena", "Kwaku", "Yaw", "Koffi", "Kwame"];
+const femaleName = ["Kwasi", "Kwado", "Kwabena", "Kwaku", "Yaw", "Koffi", "Kwame"];
+function getDate(){
+  let dob = new Date(document.getElementById("dob").value);
+  gender = "male";
+  if(gender === "male"){
+    console.log(maleName[dob.getDay()]);
+  }else{
+    console.log(femaleName[dob.getDay()]);
   }
+}
