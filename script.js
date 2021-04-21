@@ -15,16 +15,15 @@ function akanFunction() {
     day = parseInt(cd);
   
   
-    var century = parseInt((year - 1) / 100 + 1);
-    var formula = (((26 * (month + 1) / 10)) + ((5 * year / 4)) + ((century / 4) - 2 * century - 1) + day) % 7;
+    var century = parseInt((year - 1) / 100     + 1);
+    var dayIndex = new Date(year +"/" + month + "/" + day).getDay()
+ 
     var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Afua", "Afua", "Ama"];
     var dayOfMonth = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    var dayIndex = Math.floor(formula);
-    dayIndex +=1;
+
   
-  
-    if (year > 0 && year < 2021) {
+    if (year > 0 && year < 2025) {
       if (month > 0 && month < 13) {
         if (day > 0 && day < 32) {
   
@@ -46,14 +45,4 @@ function akanFunction() {
       alert("input the correct year e.g 2019");
     }
  }
- const maleName = ["Kwasi", "Kwado", "Kwabena", "Kwaku", "Yaw", "Koffi", "Kwame"];
-const femaleName = ["Kwasi", "Kwado", "Kwabena", "Kwaku", "Yaw", "Koffi", "Kwame"];
-function getDate(){
-  let dob = new Date(document.getElementById("dob").value);
-  gender = "male";
-  if(gender === "male"){
-    console.log(maleName[dob.getDay()]);
-  }else{
-    console.log(femaleName[dob.getDay()]);
-  }
-}
+ 
